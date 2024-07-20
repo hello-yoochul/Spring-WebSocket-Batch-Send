@@ -60,8 +60,8 @@ public class ServerA {
         private class DataSender implements Runnable {
             private final WebSocketSession session;
             private int bundleCount = 0;
-            private final int totalBundles = 20000; // 총 보낼 묶음 (라인당 100개 보내면 100*10000=총 1백만개)
-            private final int linesPerBundle = 50;  // 한번 보낼때 보낼 라인 수
+            private final int totalBundles = 100000; // 총 보낼 묶음 (라인당 100개 보내면 100*10000=총 1백만개)
+            private final int linesPerBundle = 10;  // 한번 보낼때 보낼 라인 수
 
             public DataSender(WebSocketSession session) {
                 this.session = session;

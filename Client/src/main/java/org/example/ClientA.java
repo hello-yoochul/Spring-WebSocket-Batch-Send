@@ -14,7 +14,7 @@ import java.util.concurrent.CountDownLatch;
 public class ClientA {
 
     private static final String SERVER_URI = "ws://localhost:8282/data";
-    private static final int EXPECTED_BUNDLES = 20000; // 예상되는 데이터 묶음 수
+    private static final int EXPECTED_BUNDLES = 100000; // 예상되는 데이터 묶음 수
 
     public static void main(String[] args) throws Exception {
         CountDownLatch latch = new CountDownLatch(1);
